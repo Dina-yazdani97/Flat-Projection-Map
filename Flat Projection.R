@@ -35,8 +35,10 @@ ggplot() +
     plot.title = element_text(hjust = 0.5, size = 16),
     panel.grid = element_blank(),
     axis.text = element_blank(),
-    axis.title = element_blank()
+    axis.title = element_blank(),
+    plot.background = element_rect(fill = "white", color = NA),
+    panel.background = element_rect(fill = "white", color = NA)
   )
 
 # Save Map ----------------------------------------------------------------
-ggsave("Flat_map.png", width = 10, height = 6, dpi = 300)
+ggsave("Flat_map.png", width = 10, height = 6, dpi = 300, bg = "white")
